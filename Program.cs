@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SRM
 {
-    internal class Program2
+    internal class Program
     {
         static public void Show(int[,]mass)
         {
@@ -34,7 +34,7 @@ namespace SRM
                     matrix[i, j] = rand.Next(10);
                 }
             }
-            Console.WriteLine("Изнаальная матрица:");
+            Console.WriteLine("Изначальная матрица:");
             Show(matrix);
             Console.WriteLine("Сдвинуть матрицу: Вправо\tВниз");
             string side = Console.ReadLine();
@@ -129,7 +129,7 @@ namespace SRM
                     Show(matrix);
                     break;
                 default:
-                    Console.WriteLine("Такое направление неизветно!");
+                    Console.WriteLine("Такое направление неизвестно!");
                     return;
             }
         }
